@@ -22,6 +22,9 @@
     },
     "IndustriesAutomotiveSettings": {
       "enableAutomotiveScheduler": true
+    },
+    "IndustriesSettings": {
+      "enableMultiResourceOrgPref": true
     }
   }
 }
