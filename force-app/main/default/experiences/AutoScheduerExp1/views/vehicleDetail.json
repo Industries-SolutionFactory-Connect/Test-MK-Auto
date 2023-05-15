@@ -1,0 +1,316 @@
+{
+  "appPageId" : "06f2c770-7ef5-4033-9922-aba7a0b29d30",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "a1b008a6-8da1-4678-b192-82f61ec74e78",
+  "label" : "Vehicle Detail",
+  "regions" : [ {
+    "id" : "3633ac7a-c5e8-4d51-8e96-7b706401b1a4",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "e8d0eb28-1d25-4144-b211-82c76c73ab76",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "e4e9ec81-da69-471a-8d34-fdf9039b0441",
+          "activeTab" : "tab1",
+          "tabs" : [ {
+            "UUID" : "d76fab25-34c6-48ba-80be-26207dd887f8",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "sfdc:identifier" : "builder_industries_insurance_communityIndustryMilestones"
+              },
+              "fqn" : "builder_industries_insurance:communityIndustryMilestones"
+            } ],
+            "tabKey" : "tab1",
+            "tabName" : "Milestones"
+          }, {
+            "UUID" : "ca7e7168-e023-453f-87e3-cd50fdcd85ac",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : { },
+              "fqn" : "forceCommunity:recordDetail"
+            } ],
+            "tabKey" : "tab2",
+            "tabName" : "Details"
+          }, {
+            "UUID" : "a60e554a-3f06-4842-889d-aefdab7aed07",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "relatedListApiName" : "AssetAccountParticipantsVehicle",
+                "sfdc:identifier" : "industries_automotive_AssetAccountParticipants"
+              },
+              "fqn" : "forceCommunity:responsiveRelatedListSingle"
+            }, {
+              "attributes" : {
+                "relatedListApiName" : "AssetContactParticipantsVehicle",
+                "sfdc:identifier" : "industries_automotive_AssetContactParticipants"
+              },
+              "fqn" : "forceCommunity:responsiveRelatedListSingle"
+            }, {
+              "attributes" : {
+                "relatedListApiName" : "VehicleClaimItems",
+                "relatedListComponentOverride" : "ADVGRID",
+                "sfdc:identifier" : "industries_automotive_VehicleClaimItems"
+              },
+              "fqn" : "forceCommunity:responsiveRelatedListSingle"
+            }, {
+              "attributes" : {
+                "parentFieldApiName" : "Vehicle.AssetId",
+                "relatedListApiName" : "ServiceAppointments",
+                "sfdc:identifier" : "industries_automotive_ServiceAppointmentsRelatedList"
+              },
+              "fqn" : "forceCommunity:responsiveRelatedListSingleWithParentField"
+            }, {
+              "attributes" : {
+                "relatedListApiName" : "VehicleTestDriveAppointments",
+                "sfdc:identifier" : "industries_automotive_TestDriveServiceAppointments"
+              },
+              "fqn" : "forceCommunity:responsiveRelatedListSingle"
+            } ],
+            "tabKey" : "tab3",
+            "tabName" : "Related"
+          }, {
+            "UUID" : "93d9e219-0f90-4306-a78b-96e766809992",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "relatedListApiName" : "VehicleProductRelatedMaterials",
+                "sfdc:identifier" : "industries_automotive_vehicleProductRelMaterial"
+              },
+              "fqn" : "forceCommunity:responsiveRelatedListSingle"
+            }, {
+              "attributes" : {
+                "relatedListApiName" : "VehicleProductRelatedComponents",
+                "sfdc:identifier" : "industries_automotive_vehicleProductRelComponent"
+              },
+              "fqn" : "forceCommunity:responsiveRelatedListSingle"
+            } ],
+            "tabKey" : "tab4",
+            "tabName" : "Parts and Accessories"
+          }, {
+            "UUID" : "d9e68bd8-40c4-4b81-aef8-81f4902cb699",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "relatedListApiName" : "VehicleWarranties",
+                "relatedListComponentOverride" : "ADVGRID",
+                "sfdc:identifier" : "forceCommunity_relatedListSingleContainer"
+              },
+              "fqn" : "forceCommunity:responsiveRelatedListSingle"
+            } ],
+            "tabKey" : "tab5",
+            "tabName" : "Warranties"
+          }, {
+            "UUID" : "1760d201-5076-4e5d-a6b8-00dca5891d23",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "sfdc:identifier" : "industries_automotive_autoAssetHierarchy"
+              },
+              "fqn" : "industries_automotive:autoAssetHierarchy"
+            }, {
+              "attributes" : {
+                "relatedListApiName" : "PrimaryAssets",
+                "sfdc:identifier" : "industries_automotive_primaryAssetsRelatedList"
+              },
+              "fqn" : "forceCommunity:responsiveRelatedListSingle"
+            } ],
+            "tabKey" : "tab6",
+            "tabName" : "Assets"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "e4e9ec81-da69-471a-8d34-fdf9039b0441",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "BusinessMilestoneTypes" : "",
+            "LifeMilestoneTypes" : ""
+          },
+          "componentName" : "builder_industries_insurance:communityIndustryMilestones",
+          "id" : "e93c9898-4ffd-4185-a4aa-49c424fce4fa",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "d76fab25-34c6-48ba-80be-26207dd887f8",
+        "regionLabel" : "Milestones",
+        "regionName" : "tab1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "8c0201d4-a23d-4655-8b44-4ccefcf66e8e",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "ca7e7168-e023-453f-87e3-cd50fdcd85ac",
+        "regionLabel" : "Details",
+        "regionName" : "tab2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "relatedListApiName" : "AssetAccountParticipantsVehicle",
+            "relatedListComponentOverride" : "GRID",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:responsiveRelatedListSingle",
+          "id" : "07f60445-daca-446e-9b52-f93ec10fd860",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "relatedListApiName" : "AssetContactParticipantsVehicle",
+            "relatedListComponentOverride" : "GRID",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:responsiveRelatedListSingle",
+          "id" : "745c4625-ce50-4622-83eb-ab665cf5875b",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "relatedListApiName" : "VehicleClaimItems",
+            "relatedListComponentOverride" : "ADVGRID",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:responsiveRelatedListSingle",
+          "id" : "4286f556-a018-48b4-aee8-4d182d7c1424",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "parentFieldApiName" : "Vehicle.AssetId",
+            "relatedListApiName" : "ServiceAppointments",
+            "relatedListComponentOverride" : "GRID",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:responsiveRelatedListSingleWithParentField",
+          "id" : "d8377920-8ef8-4f61-84bd-d6fdd87bff80",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "relatedListApiName" : "VehicleTestDriveAppointments",
+            "relatedListComponentOverride" : "GRID",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:responsiveRelatedListSingle",
+          "id" : "bebf99cc-dbca-4581-a6d0-686f7e1a85b4",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a60e554a-3f06-4842-889d-aefdab7aed07",
+        "regionLabel" : "Related",
+        "regionName" : "tab3",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "relatedListApiName" : "VehicleProductRelatedMaterials",
+            "relatedListComponentOverride" : "GRID",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:responsiveRelatedListSingle",
+          "id" : "7c812773-0652-4216-98bf-09c3e653dbe5",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "relatedListApiName" : "VehicleProductRelatedComponents",
+            "relatedListComponentOverride" : "GRID",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:responsiveRelatedListSingle",
+          "id" : "0cc1203c-3740-41c5-9ffa-029a87b72156",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "93d9e219-0f90-4306-a78b-96e766809992",
+        "regionLabel" : "Parts and Accessories",
+        "regionName" : "tab4",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "relatedListApiName" : "VehicleWarranties",
+            "relatedListComponentOverride" : "ADVGRID",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:responsiveRelatedListSingle",
+          "id" : "254471ca-9819-4641-ad5c-575a4dfd86df",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "d9e68bd8-40c4-4b81-aef8-81f4902cb699",
+        "regionLabel" : "Warranties",
+        "regionName" : "tab5",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "industries_automotive:autoAssetHierarchy",
+          "id" : "d0fe9e51-f7fc-47c6-8b13-5773af2bef77",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "relatedListApiName" : "PrimaryAssets",
+            "relatedListComponentOverride" : "GRID",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:responsiveRelatedListSingle",
+          "id" : "43eb2456-6406-45e0-8f73-6b5a573766b5",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "1760d201-5076-4e5d-a6b8-00dca5891d23",
+        "regionLabel" : "Assets",
+        "regionName" : "tab6",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "58fa4c32-9c78-4a6c-bb2d-5f51a35ee7ad",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "df6dd4b4-e9df-4bce-93e8-81fd8fdc04ca",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-0vL"
+}

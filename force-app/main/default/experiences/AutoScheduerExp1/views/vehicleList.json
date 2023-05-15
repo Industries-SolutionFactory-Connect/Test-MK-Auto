@@ -1,0 +1,46 @@
+{
+  "appPageId" : "06f2c770-7ef5-4033-9922-aba7a0b29d30",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "9bb1b453-9f7f-44f9-a849-f8ef9baea2c5",
+  "label" : "Vehicle List",
+  "regions" : [ {
+    "id" : "121a17e2-5888-4af6-88ff-7887169c77ee",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "{!filterId}",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "{!objectName}",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "649b2a01-0f93-4a5e-ad16-7c16b597ab6e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "554cb10e-5ae7-4369-8d1c-f2eb4306671b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "3a95cbfd-a7dc-4426-9b06-3dde6536b03d",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-0vL"
+}
