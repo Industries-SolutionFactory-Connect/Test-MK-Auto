@@ -26,6 +26,9 @@
     "IndustriesSettings": {
       "enableMultiResourceOrgPref": true,
       "enableTimelinePref": true
+    },
+      "ExperienceBundleSettings": {
+      "enableExperienceBundleMetadata": true
     }
   }
 }
